@@ -61,7 +61,7 @@ export class App extends Component {
 
     return (
       <div className="container">
-        <h1 className="title">Phonebook</h1>
+        <h1 className="title head">Phonebook</h1>
         <ContactForm createContact={this.createContact} />
         <h2 className="title">Contacts</h2>
         <Filter value={filter} onChange={this.onFilterChange} />
