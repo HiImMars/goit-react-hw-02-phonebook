@@ -33,6 +33,7 @@ export class ContactForm extends Component {
             name="name"
             required
             onChange={this.handleChange}
+            value={this.state.name}
             placeholder="Enter name..."
             pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           />
@@ -45,6 +46,7 @@ export class ContactForm extends Component {
             name="number"
             required
             onChange={this.handleChange}
+            value={this.state.number}
             placeholder="Enter number..."
             pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
           />
